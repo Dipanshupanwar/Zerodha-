@@ -1,44 +1,79 @@
 import React from "react";
-
 function Brokerage() {
   return (
     <div className="container">
-      <div className="row p-5 mt-5 text-center border-top">
-        <div className="col-8 p-4">
-          <a href="" style={{ textDecoration: "none" }}>
-            <h3 className="fs-5">Brokerage calculator</h3>
+      <div className="row p-5 mt-5 text-center">
+        <div className="col-6 p-4">
+          <a style={{ fontSize: "1.4rem", textDecoration: "none" }} href="/">
+            <h1 style={{ fontSize: "1.4rem", textDecoration: "none" }}>
+              Brokerage Calculter
+            </h1>
           </a>
           <ul
-            style={{ textAlign: "left", lineHeight: "2.5", fontSize: "12px" }}
-            className="text-mut"
+            style={{
+              textAlign: "left",
+              lineHeight: "1.9rem",
+              marginTop: "2rem",
+            }}
           >
             <li>
-              Call & Trade and RMS auto-squareoff:Additional charges of ₹50 +
-              GST per order.
-            </li>
-            <li>Digital contract notes will be sent via e-mail.</li>
-            <li>
-              Physical copies of contract notes, if required, shall be charged
-              ₹20 per contract note. Courier charges apply.
+              Securities Transaction Tax (STT): Varies by transaction type; for
+              instance, 0.1% on both buy and sell sides for equity delivery
+              trades
             </li>
             <li>
-              For NRI account (non-PIS), 0.5% or ₹100 per executed order for
-              equity (whichever is lower).
+              {" "}
+              Exchange Transaction Charges: Levied by exchanges (NSE, BSE, MCX)
+              based on transaction value.
             </li>
             <li>
-              For NRI account (PIS), 0.5% or ₹200 per executed order for equity
-              (whichever is lower).
+              {" "}
+              Goods and Services Tax (GST): 18% on brokerage and transaction
+              charges.
             </li>
+            <li> SEBI Charges: ₹10 per crore of transaction value.</li>
             <li>
-              If the account is in debit balance, any order placed will be
-              charged ₹40 per executed order instead of ₹20 per executed order.
+              {" "}
+              Stamp Duty: Varies by state; for Madhya Pradesh, it's 0.015% for
+              delivery tra
             </li>
           </ul>
         </div>
-        <div className="col-4 p-4">
-          <a href="" style={{ textDecoration: "none" }}>
-            <h3 className="fs-5">List of charges</h3>
+        <div className="col-6 p-4">
+          <a style={{ fontSize: "1.4rem", textDecoration: "none" }} href="/">
+            <h1 style={{ fontSize: "1.4rem" }}>List Of Charges </h1>
           </a>
+             <ul
+                style={{
+                  textAlign: "left",
+                  lineHeight: "1.9rem",
+                  marginTop: "2rem",
+                }}
+              >
+                <li>Equity Delivery: No brokerage charges (₹0</li>
+                <li>
+                  {" "}
+                  Exchange Transaction Charges: Levied by exchanges (NSE, BSE,
+                  MCX) based on transaction value.
+                </li>
+                <li>
+                  {" "}
+                  Goods and Services Tax (GST): 18% on brokerage and transaction
+                  charges.
+                </li>
+                <li>
+                  {" "}
+                  Equity Intraday, Futures, and Options: Lower of 0.03% or ₹20
+                  per executed order.
+                </li>
+                <li>
+                  {" "}
+                  Currency and Commodity Trades: Lower of 0.03% or ₹20 per
+                  executed order.
+                </li>
+              </ul>
+         
+          <p></p>
         </div>
       </div>
     </div>

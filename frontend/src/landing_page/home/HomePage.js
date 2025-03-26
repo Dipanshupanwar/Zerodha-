@@ -1,27 +1,26 @@
-import React from "react";
-import Hero from "./Hero";
-import Awards from "./Awards";
-import Stats from "./Stats";
-import Pricing from "./Pricing";
-import Education from "./Education";
+import React from 'react';
+import Hero from './Hero';
+import Award from './Award';
+import Stats from './Stats';
+import Pricing from './Pricing';
+import Education from './Education';
+import Footer from '../Footer';
+import Openaccount from '../Openaccount';
+import Navbar from '../Navbar';
+function Homepage() {
+    return ( 
+      <>
 
-import OpenAccount from "../OpenAccount";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
+      <Hero/>
+      <Award/>
+      <Stats/>
+      <Pricing/>
+      <Education/>
+      <Openaccount/>
+    
 
-function HomePage() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <Awards />
-      <Stats />
-      <Pricing />
-      <Education />
-      <OpenAccount />
-      <Footer />
-    </>
-  );
+      </>
+     );
 }
 
-export default HomePage;
+export default Homepage;
