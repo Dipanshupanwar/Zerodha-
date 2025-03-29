@@ -11,6 +11,10 @@ import Supportpage from './landing_page/support/Supportpage';
 import Navbar from './landing_page/Navbar';
 import Footer from './landing_page/Footer';
 import Notfound from './landing_page/Notfound';
+import 'react-toastify/dist/ReactToastify.css'
+
+import Login from './landing_page/signup/Login';
+
 
 
 
@@ -20,7 +24,10 @@ root.render(
 <Navbar/>
     <Routes>
        <Route path="/" element={<Homepage/>}></Route>
+
        <Route path="/about" element={<Aboutpage/>}></Route>
+       <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
        <Route path="/pricing" element={<Pricingpage/>}></Route>
        <Route path="/product" element={<Productpage/>}></Route>
        <Route path="/signup" element={<Signup/>}></Route>
