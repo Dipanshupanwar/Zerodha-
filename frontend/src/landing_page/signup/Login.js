@@ -49,7 +49,7 @@ const Login = () => {
         handleSuccess(message);
         setTimeout(() => {
           // ✅ Redirect to Dashboard running on Port 3000
-          window.location.href =  "http://localhost:3000/dashboard"; 
+          window.location.href =  "http://localhost:3001/dashboard"; 
         }, 1000);
       } else {
         handleError(message);
